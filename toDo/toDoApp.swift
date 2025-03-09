@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct toDoApp: App {
+struct todoAppApp: App {
+    let coreDataStack = CoreDataStack.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, coreDataStack.viewContext)
         }
     }
 }
