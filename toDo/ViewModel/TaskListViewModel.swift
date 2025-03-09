@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 class TaskListViewModel: ObservableObject {
     @Published var isLoading = false
@@ -105,5 +106,30 @@ class TaskListViewModel: ObservableObject {
             }
             self.coreDataStack.saveContext()
         }
+    }
+}
+
+class NetworkManager {
+    static let shared = NetworkManager()
+    private let apiUrl = "https://dummyjson.com/todos"
+    
+    func fetchTodos(completion: @escaping (Result<[RemoteTodo], Error>) -> Void) {
+        guard let url = URL(string: apiUrl) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let data = data else { return }
+            
+            do {
+                let response = try JSONDecoder().decode(TodoResponse.self, from: data)
+                completion(.success(response.todos))
+            } catch {
+                completion(.failure(error))
+            }
+        }.resume()
     }
 }

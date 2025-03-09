@@ -10,22 +10,9 @@
 		9B5CC21F2D7DCE5E00B53205 /* toDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9B5CC2422D7DCF3C00B53205 /* Exceptions for "toDo" folder in "toDo" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Untitled.swift,
-			);
-			target = 9B5CC21E2D7DCE5E00B53205 /* toDo */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9B5CC2212D7DCE5E00B53205 /* toDo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				9B5CC2422D7DCF3C00B53205 /* Exceptions for "toDo" folder in "toDo" target */,
-			);
 			path = toDo;
 			sourceTree = "<group>";
 		};
@@ -268,6 +255,7 @@
 				DEVELOPMENT_TEAM = NG8TF397V4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do It";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +285,7 @@
 				DEVELOPMENT_TEAM = NG8TF397V4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do It";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

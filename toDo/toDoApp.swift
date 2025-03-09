@@ -11,6 +11,10 @@ import SwiftUI
 struct todoAppApp: App {
     let coreDataStack = CoreDataStack.shared
     
+    init() {
+        UIView.appearance().overrideUserInterfaceStyle = .dark
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
