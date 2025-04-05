@@ -13,7 +13,7 @@ This is a Swift-based Todo List application that allows users to manage their ta
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/todo-list-app.git
+   git clone https://github.com/headweek/toDoWhat.git
    ```
 
 2. Open the project in Xcode:
