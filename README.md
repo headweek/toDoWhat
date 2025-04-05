@@ -25,9 +25,9 @@ This is a Swift-based Todo List application that allows users to manage their ta
 
 ## Usage
 
-- **Add Todo**: Click on the "Add" button to create a new Todo. The new task will be stored locally and sent to the API.
+- **Add Todo**: Click on the "Add" button to create a new Todo. The new task will be stored locally.
 - **Edit Todo**: Tap on any task to modify its title or description.
-- **Delete Todo**: Swipe to delete a task. It will be removed from both CoreData and the API.
+- **Delete Todo**: Swipe to delete a task. It will be removed from both CoreData.
 - **Syncing**: On app launch, Todo items are fetched from CoreData and synced with the API.
 
 ## Dependencies
