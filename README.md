@@ -18,7 +18,7 @@ This is a Swift-based Todo List application that allows users to manage their ta
 
 2. Open the project in Xcode:
    ```bash
-   open TodoListApp.xcodeproj
+   open toDo.xcodeproj
    ```
 
 3. Build and run the app on your simulator or device.
